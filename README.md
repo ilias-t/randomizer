@@ -1,9 +1,12 @@
-# Student Picker
+# Randomizer
 
-Helps facilitate presentations by randomly selecting a unique student when prompted.
+Selects a unique item from a list then removes it.
+
+>Among other things, it's useful for a virtual "questions in a hat", in which a random question is drawn each turn.
 
 ##Setup
-* You can edit the list of students in `lib/assets/student_list.rb`
-* Run the app with `ruby pick_students.rb` in the root directory
+Edit the list of items in `lib/assets/items.rb`
 
-Thanks to [awkward_turtle](https://github.com/mswain/awkward_turtle) for the animation!
+Run the app with `ruby randomizer.rb`
+
+Run tests with `rspec`
