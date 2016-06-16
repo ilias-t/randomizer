@@ -1,20 +1,20 @@
 require_relative 'spec_helper'
-require_relative '../lib/student_picker'
+require_relative '../lib/list'
 
-describe "cohort" do
-  let!(:cohort){Cohort.new(["Jimi", "Alice", "Bob"])}
+describe "list" do
+  subject(:list){List.new(["Jimi", "Alice", "Bob"])}
 
-  it "returns all the students" do
-    expect(cohort.students).to eq(["Jimi", "Alice", "Bob"])
+  it "returns all the items" do
+    expect(list.items).to eq(["Jimi", "Alice", "Bob"])
   end
 
-  it "picks a random student from the cohort" do
-    expect(cohort.random).to be_an_instance_of String
+  it "picks a random student from the list" do
+    expect(list.random).to be_an_instance_of String
   end
 
-  it "removed the picked student from the set of students" do
-    random_student = cohort.random
-    expect(cohort.students).not_to include(random_student)
+  it "removed the picked student from the set of items" do
+    random_item = list.random
+    expect(list.items).not_to include(random_item)
   end
 
 end

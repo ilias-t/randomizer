@@ -1,7 +1,5 @@
 class AwkwardTurtle
   @t1 = %q{
-
-    CONGRATS WDI14!!
            _
           / \
       _  .""". _
